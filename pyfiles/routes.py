@@ -11,19 +11,6 @@ ALLOWED_EXTENSIONS = {'csv'}
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 
-# from flask_sqlalchemy import SQLAlchemy
-# app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///holes.db'
-# db=SQLAlchemy(app)
-
-
-# class Item(db.Model):
-#     id=db.Column(db.Integer, primary_key=True)
-#     name=db.Column(db.String, nullable=False)
-#     data=db.Column(db.LargeBinary)
-#     cluster=db.Column(db.Integer)
-#     rul=db.column(db.Numeric)
-
-
 def execute(cs,rs):
     # If filename is valid
     def allowed_file(filename):
