@@ -8,7 +8,7 @@ import pandas as pd
 # UPLOAD_FOLDER = 'file_upload'
 ALLOWED_EXTENSIONS = {'csv'}
 
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+# app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 
 def execute(cs,rs):
