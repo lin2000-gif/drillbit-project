@@ -5,7 +5,7 @@ from werkzeug.utils import secure_filename
 from pyfiles import compressed, rul
 import pandas as pd
 
-UPLOAD_FOLDER = 'file_upload'
+# UPLOAD_FOLDER = 'file_upload'
 ALLOWED_EXTENSIONS = {'csv'}
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
