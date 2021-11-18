@@ -59,27 +59,7 @@ def execute(cs,rs):
         print("CLUSTERS HERE:")
         return render_template('upload.html',cs=cs,rs=rs)
 
-    @app.route('/dynamic')
-    def sense():
-        # df=pd.read
-        return render_template('dynamic.html')
-
-    # @app.route('/')
-    # @app.route('/home')
-    # def greet():
-    #     # return render_template('index.ejs', final_cluster=final_cluster,myrul=myrul)
-    #     return render_template('upload.html')
-
-
-    # @app.route('/success/<name>')  
-    # def success(name):
-    #     # print(name)
-    #     file_path = UPLOAD_FOLDER + '/' + name
-    #     (data_comp,final_cluster) = compressed.calcClusters(file_path)
-    #     pred_rul=rul.calcRUL(data_comp,final_cluster)
-    #     os.remove(file_path)
-    #     return render_template('success.html',name=name,pred_rul=pred_rul,final_cluster=final_cluster)
-
+ 
     @app.route('/home/upload')
     def upload():
         return render_template('upload.html')
